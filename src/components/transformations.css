@@ -1,0 +1,10 @@
+/* transformations */
+.transformations {
+    padding-block: var(--padding100);
+    background-color: var(--sub-color);
+}
+.transformations .carousel {
+    width: 100%;
+    object-fit: cover;
+}
+/* transformations */

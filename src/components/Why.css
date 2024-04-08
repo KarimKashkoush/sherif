@@ -1,0 +1,119 @@
+/* why */
+.why {
+    padding-block: var(--padding100);
+    background-color: var(--bg-color-2);
+}
+.why .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.why .container .image {
+    position: relative;
+    padding-inline: 15px;
+}
+.why .container .image::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--main-color);
+    height: 0;
+    width: 5px;
+    transition: var(--transition5);
+    animation: linewhy 3s linear infinite;
+}
+.why .container .image::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--main-color);
+    height: 0;
+    width: 5px;
+    transition: var(--transition5);
+    animation: linewhy 3s linear infinite;
+}
+@keyframes linewhy {
+    0% {
+        height: 0%;
+    }
+    50% {
+        height: 100%;
+    }
+    100% {
+        height: 0%;
+    }
+}
+.why .container .image img{
+    width: 450px;
+    max-width: 100%;
+}
+.why .container .text {
+    flex: 1;
+    text-transform: capitalize;
+}
+.why .container .text h2 {
+    color: var(--white-color);
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.why .container .text h2 span {
+    position: relative;
+}
+.why .container .text h2 span::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--main-color);
+    animation: why 3s linear infinite;
+}
+@keyframes why {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+.why .container .text .pro {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.why .container .text .pro p {
+    margin: 0;
+    font-size: 20px;
+    color: var(--white-color);
+}
+.why .container .text .pro i {
+    color: var(--main-color);
+    margin-right: 10px;
+    font-size: 25px;
+}
+.why .container .text a {
+    color: var(--white-color);
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    transition: var(--transition3);
+}
+.why .container .text a:hover {
+    box-shadow: 0 0 10px var(--white-color);
+}
+@media (max-width: 991px) {
+    .why .container {
+        flex-direction: column-reverse;
+        gap: 60px;
+    }
+}
+/* why */

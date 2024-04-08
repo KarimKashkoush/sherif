@@ -1,0 +1,74 @@
+/* Landing */
+.landing {
+    background-color: var(--bg-color-2);
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 3;
+}
+@media (max-width: 800px) {
+    .landing {
+        background-image: url(./WhatsApp\ Image\ 2023-08-19\ at\ 02.51.57.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: var(--sub-color);
+        position: relative;
+        z-index: 1;
+    }
+    .landing::before {
+        content: "";
+        background-color: #0000007c;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .landing .container {
+        position: relative;
+    }
+}
+.landing .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: var(--white-color);
+    text-transform: capitalize;
+    position: relative;
+    z-index: 2;
+}
+.landing .container .text h2 {
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.landing .container .text p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+.landing .container .text > a {
+    background-color: var(--bg-color-3);
+    color: var(--white-color);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 25px;
+    transition: var(--transition3);
+}
+.landing .container .text > a:hover {
+    box-shadow: 0 0 10px var(--white-color);
+}
+.landing .container .text .iqon {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.landing .container .text .iqon li a {
+    color: var(--white-color);
+    font-size: 28px;
+}
+/* Landing */

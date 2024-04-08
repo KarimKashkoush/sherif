@@ -1,0 +1,181 @@
+:root {
+    --transition3: 0.3s;
+    --transition5: 0.5s;
+    --padding100: 100px;
+    --padding50: 50px;
+    --white-color: #fff;
+    --black-color: #000;
+    --main-color: #ff662d;
+    --sub-color: #37383c;
+    --bg-color: #000;
+    --bg-color-2: #3a3b3f;
+    --bg-color-3: #ff662d;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+::-webkit-scrollbar {
+    width: 20px;
+    background-color: var(--white-color);
+}
+::-webkit-scrollbar-thumb {
+    width: 100%;
+    background-color: var(--main-color);
+}
+body {
+    scroll-behavior: smooth;
+    font-family: 'Cairo', sans-serif;
+    overflow-x: hidden;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a, img {
+    display: inline-block;
+}
+.container {
+    padding-inline: 15px;
+    margin-inline: auto;
+}
+@media (min-width: 786px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 991px) {
+    .container {
+        width: 950px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1150px;
+    }
+}
+.heading-div h2 {
+    width: fit-content;
+    margin: 0 auto 70px;
+    text-transform: capitalize;
+    color: var(--white-color);
+    color: var(--bg-color-3);
+    font-weight: bold;
+    border-bottom: 3px solid var(--white-color);
+}
+.navbar-brand {
+    color: var(--main-color);
+}
+/* loading */
+#preloader {
+    background-color: var(--sub-color);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+/* loading */
+
+
+
+/* up */
+.up {
+    border: 0;
+    position: fixed;
+    z-index: 10;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--bg-color-3);
+    color: var(--white-color);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    object-fit: contain;
+}
+/* up */
+
+/* -------------------------------------------------- */
+/* plan */
+.reset {
+    background-color: var(--sub-color);
+
+}
+.reset .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--white-color);
+    text-transform: capitalize;
+    position: relative;
+}
+.reset .container .box {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--bg-color-3);
+}
+.reset .container .box h2 {
+    flex: 1;
+    font-size: 22px;
+}
+.reset .container .box p {
+    font-size: 20px;
+    margin: 0;
+}
+.reset .container button {
+    text-transform: capitalize;
+    margin:30px 0;
+    padding: 10px;
+    background-color: var(--bg-color-3);
+    font-size: 22px;
+    color: var(--white-color);
+    border: 0;
+    transition: var(--transition3);
+}
+.reset .container button:hover {
+    box-shadow: 0 0 10px var(--white-color);
+}
+/* popup */
+.pup{
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--bg-color);
+    background-color: var(--white-color);
+    color: var(--sub-color);
+    text-align: center;
+    position: absolute;
+    width: 80%;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: var(--transition5);
+}
+.open {
+    top: 50%;
+}
+.pup img {
+    width: 80px;
+    margin-bottom: 30px;
+}
+.pup h2 {
+    margin-bottom: 30px;
+}
+
+.pup p {
+    margin: 0;
+}
+/* popup */
+.reset .container p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+.reset .container p span a {
+    color: var(--bg-color-3);
+    border-bottom: 2px solid var(--white-color);
+}
+/* plan */

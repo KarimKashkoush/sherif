@@ -1,0 +1,30 @@
+/* Numbers */
+.numbers {
+    padding: 15px 15px;
+    background-color: var(--sub-color);
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.numbers .number {
+    color: var(--white-color);
+}
+.numbers .number p {
+    margin: 0;
+}
+@media (max-width:786px) {
+    .numbers {
+        flex-direction: column;
+    }
+    .numbers .number {
+        width: fit-content;
+        margin: auto;
+    }
+    .numbers .number:nth-child(2) {
+        border-block: 2px solid var(--main-color);
+        padding: 30px;
+    }
+}
+/* Numbers */

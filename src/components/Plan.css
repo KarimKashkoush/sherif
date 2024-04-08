@@ -1,0 +1,121 @@
+/* plan */
+.plan {
+    padding-block: var(--padding100);
+    background-color: var(--bg-color-2);
+    color: var(--white-color);
+}
+.plan .container .content .nav-tabs {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 100px;
+    overflow: hidden;
+}
+.plan .container .content .nav-tabs li {
+    flex: 1;
+}
+.plan .container .content ul .nav-item a {
+    font-size: 20px;
+    padding: 15px 0;
+    color: #ff662d;
+}
+.plan .container .content .boxs {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+.plan .container .content .boxs .box {
+    background-color: var(--bg-color-2);
+    padding: 15px;
+    border-radius: 15px;
+    text-transform: capitalize;
+    transition: var(--transition5);
+}
+.plan .container .content .boxs .box:hover {
+    transform: translateY(-10px);
+}
+.plan .container .content .boxs .box h3 {
+    color: var(--white-color);
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--bg-color-3);
+}
+.plan .container .content .boxs .box p {
+    text-align: center;
+    padding-bottom:  0 0 10px;
+    position: relative;
+    width: 100%;
+}
+.plan .container .content .boxs .box p span {
+    text-transform: uppercase;
+    color: var(--bg-color-3);
+}
+.plan .container .content .boxs .box p:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:130px;
+    height: 4px;
+    background-color: var(--bg-color-3);
+}
+.plan .container .content .boxs .box p:nth-child(2) {
+    font-size: 25px;
+}
+.plan .container .content .boxs .box p:nth-child(3) {
+    font-size: 30px;
+    border-bottom: 2px solid var(--bg-color-3);
+} 
+.plan .container .content .boxs .box ul li {
+    font-size: 20px;
+    position: relative;
+    width: calc(100% - 30px);
+    left: 30px;
+}
+.plan .container .content .boxs .box ul li::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    margin-right: 10px;
+    font-weight: 900;
+    color: var(--bg-color-3);
+    position: absolute;
+    left: -25px;
+}
+.plan .container .content .boxs .box ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+.plan .container .content .boxs .box a {
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 30px 0;
+    background-color: var(--bg-color-3);
+    color: var(--white-color);
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: var(--transition3);
+}
+.plan .container .content .boxs .box a:hover {
+    box-shadow: 0 0 10px var(--white-color);
+}
+.plan .container .content .boxs .box .location {
+    border-top: 2px solid var(--bg-color-3);
+    padding-top: 10px;
+}
+.plan .container .content .boxs .box .location h4 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.plan .container .content .boxs .box .location ul li::before {
+    content: "\f3c5";
+}
+.plan .container .content .boxs .box .location ul li span {
+    color: var(--bg-color-3);
+    text-transform: uppercase;
+}
+/* plan */

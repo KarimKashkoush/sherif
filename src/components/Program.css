@@ -1,0 +1,54 @@
+/* Program */
+.program {
+    padding-block: var(--padding100);
+    background-color: var(--sub-color);
+}
+.program .container .heading {
+    margin-bottom: 50px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    color: var(--white-color);
+    text-transform: capitalize;
+}
+.program .container .heading h2,
+.program .container .heading p {
+    flex: 1;
+}
+.program .container .boxs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+.program .container .boxs .box {
+    background-color: var(--white-color);
+    padding: 20px;
+    border-radius: 15px;
+    text-transform: capitalize;
+    background-color: var(--bg-color-2);
+    color: var(--white-color);
+}
+.program .container .boxs .box:nth-child(2) {
+    background-color: var(--bg-color-3);
+    color: var(--white-color);
+}
+.program .container .boxs .box i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.program .container .boxs .box h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.program .container .boxs .box p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 0;
+} 
+@media (max-width: 991px) {
+    .program .container .heading {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* Program */
