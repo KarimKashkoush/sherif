@@ -15,12 +15,12 @@ const Plan = () => {
                             <li className="nav-item" role="presentation">
                                 <a className="nav-link active" id="ex2-tab-1" data-mdb-toggle="tab" href="#ex2-tabs-1" role="tab" aria-controls="ex2-tabs-1" aria-selected="true">online</a>
                             </li>
-                            <li className="nav-item" role="presentation">
+                            {/* <li className="nav-item" role="presentation">
                                 <a className="nav-link" id="ex2-tab-2" data-mdb-toggle="tab" href="#ex2-tabs-2" role="tab" aria-controls="ex2-tabs-2" aria-selected="false">Mansoura</a>
                             </li>
                             <li className="nav-item" role="presentation">
                                 <a className="nav-link" id="ex2-tab-3" data-mdb-toggle="tab" href="#ex2-tabs-3" role="tab" aria-controls="ex2-tabs-3" aria-selected="false">belqas</a>
-                            </li>
+                            </li> */}
                         </ul>
                         {/* Tabs navs */}
                         {/* Tabs content */}

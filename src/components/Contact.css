@@ -3,17 +3,20 @@
     padding-block: var(--padding100);
     background-color: var(--bg-color-2);
 }
+
 .contact .contact-contact {
     display: flex;
     justify-content: space-between;
     gap: 30px;
     align-items: center;
 }
+
 .contact .contact-contact .image {
     position: relative;
     max-width: 400px;
     padding-inline: 10px;
 }
+
 .contact .contact-contact .image::before {
     content: "";
     position: absolute;
@@ -25,6 +28,7 @@
     transition: var(--transition5);
     animation: linecontact 3s linear infinite;
 }
+
 .contact .contact-contact .image::after {
     content: "";
     position: absolute;
@@ -36,33 +40,41 @@
     transition: var(--transition5);
     animation: linecontact 3s linear infinite;
 }
+
 @keyframes linecontact {
     0% {
         height: 0%;
     }
+
     50% {
         height: 100%;
     }
+
     100% {
         height: 0%;
     }
 }
+
 .contact .contact-contact .image img {
     width: 100%;
 }
+
 .contact .form {
     flex: 1;
 }
+
 .contact .social ul {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-bottom: 30px;
 }
+
 .contact .social ul li a {
     font-size: 28px;
     color: var(--white-color);
 }
+
 .contact .form form input {
     width: 100%;
     background-color: transparent;
@@ -75,12 +87,14 @@
     font-size: 18px;
     text-align: center;
 }
+
 .contact .form form input::placeholder,
 .contact .form form textarea::placeholder {
     color: var(--white-color);
     text-transform: capitalize;
     font-size: 18px;
 }
+
 .contact .form form textarea {
     text-align: center;
     border: none;
@@ -92,20 +106,25 @@
     font-size: 22px;
     background-color: transparent;
 }
+
 .contact .form form input[type=submit] {
     margin-top: 20px;
     background-color: var(--bg-color-3);
     transition: var(--transition3);
 }
+
 .contact .form form input[type=submit]:hover {
     box-shadow: 0 0 10px var(--white-color);
 }
+
 @media (max-width: 991px) {
     .contact .contact-contact {
         flex-direction: column-reverse;
     }
+
     .contact .contact-contact .form {
         width: 100%;
     }
 }
+
 /* contact */

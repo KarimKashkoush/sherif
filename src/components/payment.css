@@ -1,0 +1,19 @@
+.payment {
+      form {
+            width: 100%;
+
+            >div {
+                  margin-bottom: 15px;
+            }
+
+            input {
+                  width: 100%;
+                  background-color: transparent;
+                  border: none;
+                  outline: none;
+                  color: #fff;
+                  font-size: 22px;
+                  border-bottom: 1px solid var(--bg-color-3);
+            }
+      }
+}
