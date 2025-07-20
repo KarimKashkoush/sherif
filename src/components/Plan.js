@@ -97,7 +97,7 @@ const Plan = () => {
                                             <li>Reach the best form</li>
                                             <li>Consider any injury</li>
                                         </ul>
-                                        <a href="Online3">buy now</a>
+                                        <a href="Online4">buy now</a>
                                         <div className="location">
                                             <h4>I'm here</h4>
                                             <ul>

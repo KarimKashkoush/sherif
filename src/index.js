@@ -14,6 +14,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Online4 from './pages/Online4';
 
 const router = createBrowserRouter([
   {
@@ -59,6 +60,10 @@ const router = createBrowserRouter([
   {
     path: "/Online3",
     element: <Online3 />,
+  },
+  {
+    path: "/Online4",
+    element: <Online4 />,
   },
 ]);
 
