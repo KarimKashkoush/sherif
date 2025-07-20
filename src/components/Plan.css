@@ -52,20 +52,20 @@
     text-transform: uppercase;
     color: var(--bg-color-3);
 }
-.plan .container .content .boxs .box p:nth-child(2)::before {
+.plan .container .content .boxs .box .discount::before {
     content: "";
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width:130px;
-    height: 4px;
+    height: 2px;
     background-color: var(--bg-color-3);
 }
 .plan .container .content .boxs .box p:nth-child(2) {
     font-size: 25px;
 }
-.plan .container .content .boxs .box p:nth-child(3) {
+.plan .container .content .boxs .box p:not(.discount) {
     font-size: 30px;
     border-bottom: 2px solid var(--bg-color-3);
 } 

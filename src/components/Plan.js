@@ -29,7 +29,6 @@ const Plan = () => {
                                 <div className="boxs">
                                     <div className="box shadow-5 wow slideInDown" data-wow-duration="1.5s" data-wow-delay="0.3s">
                                         <h3>1 month</h3>
-                                        <p>1200 <span>egp</span></p>
                                         <p>800 <span>egp</span></p>
                                         <ul>
                                             <li>5 classes per week</li>
@@ -49,8 +48,7 @@ const Plan = () => {
                                     </div>
                                     <div className="box shadow-5 wow slideInDown" data-wow-duration="2s" data-wow-delay="0.3s">
                                         <h3>2 month</h3>
-                                        <p>2000 <span>egp</span></p>
-                                        <p>1200 <span>egp</span></p>
+                                        <p>1500 <span>egp</span></p>
                                         <ul>
                                             <li>5 classes per week</li>
                                             <li>healthy diet</li>
@@ -69,8 +67,28 @@ const Plan = () => {
                                     </div>
                                     <div className="box shadow-5 wow slideInDown" data-wow-duration="2.5s" data-wow-delay="0.3s">
                                         <h3>3 month</h3>
-                                        <p>2500 <span>egp</span></p>
-                                        <p>1500 <span>egp</span></p>
+                                        <p class='discount'>2400 <span>egp</span></p>
+                                        <p>1200 <span>egp</span></p>
+                                        <ul>
+                                            <li>5 classes per week</li>
+                                            <li>healthy diet</li>
+                                            <li>Customized diet program every 14 days</li>
+                                            <li>Improve flexibility</li>
+                                            <li>Reach the best form</li>
+                                            <li>Consider any injury</li>
+                                        </ul>
+                                        <a href="Online3">buy now</a>
+                                        <div className="location">
+                                            <h4>I'm here</h4>
+                                            <ul>
+                                                <li>whatsapp <span>7/24</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div className="box shadow-5 wow slideInDown" data-wow-duration="2.5s" data-wow-delay="0.3s">
+                                        <h3>6 month</h3>
+                                        <p class='discount'>4800 <span>egp</span></p>
+                                        <p>2400 <span>egp</span></p>
                                         <ul>
                                             <li>5 classes per week</li>
                                             <li>healthy diet</li>

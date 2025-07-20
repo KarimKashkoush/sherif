@@ -10,6 +10,7 @@ import Feedback from "../components/Feedback";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Up from "../components/Up";
+import Offer from "../components/Offer";
 function Home() {
     return (
         <>
@@ -24,6 +25,7 @@ function Home() {
                 HomeLocation="#home"
             />
 
+            <Offer />
             <Landing />
 
             <Number />

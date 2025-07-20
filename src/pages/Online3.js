@@ -23,17 +23,17 @@ const Online3 = () => {
                     </div>
                     <div className="box">
                         <h2>the price</h2>
-                        <p>2500 EGP</p>
+                        <p>4800 EGP</p>
                     </div>
                     <div className="box">
                         <h2>Discount</h2>
-                        <p>-1000 EGP</p>
+                        <p>-2400 EGP</p>
                     </div>
                     <div className="box total">
                         <h2>total</h2>
-                        <p>1500 EGP</p>
+                        <p>2400 EGP</p>
                     </div>
-                    <button className="btn-pay" onClick={show_pup}>pay 1500EGP</button>
+                    <button className="btn-pay" onClick={show_pup}>pay 2400EGP</button>
                     {showPopup && (
                         <div className="pup" id="pup">
                             <div className="image">
